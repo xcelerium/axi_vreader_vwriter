@@ -168,7 +168,7 @@ module axi_vwriter
     aw_chan_ff.id     = ID; // constant ID to avoid reordering of resp
     aw_chan_ff.addr   = ctrl_burst_addr_ff_upd; 
     aw_chan_ff.len    = wb_attr.burst_len;
-    aw_chan_ff.size   = 3'b111; // maximum size
+    aw_chan_ff.size   = 3'b011; // maximum size
     aw_chan_ff.burst  = 2'b01;  // INCR
     aw_chan_ff.lock   = 0; // normal access 
     aw_chan_ff.cache  = 4'b1111; // write-back write allocate

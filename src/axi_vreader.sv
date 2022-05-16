@@ -162,7 +162,7 @@ module axi_vreader
     ar_chan_ff.id     = ID; // constant ID to avoid reordering of rd & resp
     ar_chan_ff.addr   = ctrl_burst_addr_ff_upd; 
     ar_chan_ff.len    = rb_attr.burst_len;
-    ar_chan_ff.size   = 3'b111; // maximum size
+    ar_chan_ff.size   = 3'b011; // maximum size
     ar_chan_ff.burst  = 2'b01;  // INCR
     ar_chan_ff.lock   = 0; // normal access 
     ar_chan_ff.cache  = 4'b1111; // write-back write allocate
